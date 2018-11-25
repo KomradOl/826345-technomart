@@ -55,6 +55,72 @@
         <li><a href="tools.html">Инструменты</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
+
+      <section class="filter">
+        <h2 class="title-filter">Фильтр</h2>
+        <form action="/echo" method="post">
+          <div class="price">
+            <label for="dayscount">Цена</label>
+            <span>0-</span><input type="range" id="dayscount" name="dayscount" min="0" max="30000" step="1000"><span>30000</span>
+          </div>
+        </form>
+      </section>
+
+      <section class="sort">
+        <h2 class="title-sort">Сортировка:</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-current">По цене</li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По функционалу</a></li>
+        </ul>
+        <button class="button-sort button-back"><span class="visually-hidden">Назад</span></button>
+        <button class="button-sort button-next"><span class="visually-hidden">Вперед</span></button>
+      </section>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosh" id="filter-bosh" checked>
+                <label for="filter-bosh">Bosh</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interscol" id="filter-interscol">
+                <label for="filter-interscol">Интерскол</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battery" checked>
+                Аккумуляторные
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="supply" >
+                Сетевые
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+
       <h1 class="page-title">Перфораторы</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
@@ -201,16 +267,22 @@
             </p>
           </li>
         </ul>
-      <!--<ul class="pagination-list">
-        <li class="pagination-item pagination-item-carrent"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">4</a></li>
-      </ul>-->
       </section>
-      <section class="filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--Здесь будет форма-->
+      <section class="pagination">
+        <h2 class="visually-hidden">Номера страниц</h2>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-carrent"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Слудующая</a></li>
+        </ul>
+      </section>
+
+      <section class="info-tools">
+        <h2 class="title-info-tools">Пара слов о перфораторах</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </section>
     </main>
 
