@@ -56,52 +56,54 @@
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
 
-      <section class="filter">
-        <h2 class="title-filter">Фильтр</h2>
-        <form action="/echo" method="post">
-          <div class="price">
-            <label for="dayscount">Цена</label>
-            <span>0-</span><input type="range" id="dayscount" name="dayscount" min="0" max="30000" step="1000"><span>30000</span>
-          </div>
-        </form>
-      </section>
-
       <section class="sort">
         <h2 class="title-sort">Сортировка:</h2>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-current">По цене</li>
+        <ul class="sort-item">
+          <li class="sort-item-current">По цене</li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-        <button class="button-sort button-back"><span class="visually-hidden">Назад</span></button>
-        <button class="button-sort button-next"><span class="visually-hidden">Вперед</span></button>
+        <a class="button-back" href="#">Назад</a>
+        <a class="button-next" href="#">Вперед</a>
       </section>
 
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h2 class="title-filter">Фильтр</h2>
+        <form action="/echo" method="post">
+          <div class="price">
+            <h3 class="title-price">Цена</h3>
+            <button class="button" type="submit"></button>
+            <button class="button" type="submit"></button>
+            <input id="price-min" type="text" name="price" value="0" placeholder="0">
+            <label for="price-min">0</label>
+            <span>-</span>
+            <input id="price-max" type="text" name="price" value="30000" placeholder="30000">
+            <label for="price-max">30000</label>
+          </div>
+        </form>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Производители:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosh" id="filter-bosh" checked>
-                <label for="filter-bosh">Bosh</label>
+                <input class="visually-hidden " type="checkbox" name="bosh" id="filter-bosh" checked>
+                <label class="checkbox" for="filter-bosh">Bosh</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interscol" id="filter-interscol">
-                <label for="filter-interscol">Интерскол</label>
+                <input class="visually-hidden " type="checkbox" name="interscol" id="filter-interscol">
+                <label class="checkbox" for="filter-interscol">Интерскол</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
-                <label for="filter-makita">Makita</label>
+                <input class="visually-hidden " type="checkbox" name="makita" id="filter-makita" checked>
+                <label class="checkbox" for="filter-makita">Makita</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
-                <label for="filter-dewalt">Dewalt</label>
+                <input class="visually-hidden " type="checkbox" name="dewalt" id="filter-dewalt">
+                <label class="checkbox" for="filter-dewalt">Dewalt</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
-                <label for="filter-hitachi">Hitachi</label>
+                <input class="visually-hidden " type="checkbox" name="hitachi" id="filter-hitachi">
+                <label class="checkbox" for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
@@ -109,12 +111,12 @@
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battery" checked>
-                Аккумуляторные
+                <input class="visually-hidden" type="radio" name="product-group" value="battery" id="filter-battery" checked>
+                <label class="radio" for="filter-battery">Аккумуляторные</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="supply" >
-                Сетевые
+                <input class="visually-hidden" type="radio" name="product-group" value="supply" id="filter-supply" >
+                <label class="radio" for="filter-supply">Сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -271,7 +273,7 @@
       <section class="pagination">
         <h2 class="visually-hidden">Номера страниц</h2>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-carrent"><a>1</a></li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Слудующая</a></li>
