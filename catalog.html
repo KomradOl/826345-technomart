@@ -72,10 +72,12 @@
         <form action="/echo" method="post">
           <div class="price">
             <h3 class="title-price">Цена</h3>
-            <button class="button" type="submit"></button>
-            <button class="button" type="submit"></button>
-            <input id="price-min" type="text" name="price" value="0" placeholder="0">
+            <div class="filter-price-bar">
+              <button class="filter-button-min" type="button"><span class="visually-hidden">Минимальная</span></button>
+              <button class="filter-button-max" type="button"><span class="visually-hidden">Максимальная</span></button>
+            </div>
             <label for="price-min">0</label>
+            <input id="price-min" type="text" name="price" value="0" placeholder="0">
             <span>-</span>
             <input id="price-max" type="text" name="price" value="30000" placeholder="30000">
             <label for="price-max">30000</label>
