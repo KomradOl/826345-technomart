@@ -8,8 +8,10 @@
     <header class="main-header">
       <a class="button-logo" href="index.html">Техномарт</a>
       <div class="search">
-        <!--Здесь будет форма Поиск-->
-
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="search-field">Поиск</label>
+          <input type="text" name="search" id="search-field">
+        </form>
       </div>
       <ul class="user-navigation">
         <li><a href="marks.html">Закладки<span>0</span></a></li>
@@ -63,8 +65,8 @@
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-        <a class="button-back" href="#">Назад</a>
-        <a class="button-next" href="#">Вперед</a>
+        <a class="button-back" href="#"><span class="visually-hidden">По убыванию</span></a>
+        <a class="button-next" href="#"><span class="visually-hidden">По возрастанию</span></a>
       </section>
 
       <section class="filters">
@@ -73,14 +75,14 @@
           <div class="price">
             <h3 class="title-price">Цена</h3>
             <div class="filter-price-bar">
-              <button class="filter-button-min" type="button"><span class="visually-hidden">Минимальная</span></button>
-              <button class="filter-button-max" type="button"><span class="visually-hidden">Максимальная</span></button>
+              <button class="filter-button-min" type="button"><span class="visually-hidden">По убыванию</span></button>
+              <button class="filter-button-max" type="button"><span class="visually-hidden">По возрастанию</span></button>
             </div>
-            <label for="price-min">0</label>
+            <label for="price-min"><span class="visually-hidden">от</span>0</label>
             <input id="price-min" type="text" name="price" value="0" placeholder="0">
             <span>-</span>
             <input id="price-max" type="text" name="price" value="30000" placeholder="30000">
-            <label for="price-max">30000</label>
+            <label for="price-max"><span class="visually-hidden">до</span>30000</label>
           </div>
         </form>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -333,5 +335,13 @@
         </div>
       </section>
     </footer>
+    <section class="modal-choice">
+      <h2 class="title-choice">Товар добавлен в корзину</h2>
+      <a class="button" href="#">Оформить заказ</a>
+      <a class="button" href="#">Продолжить покупки</a>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
   </body>
 </html>
