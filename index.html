@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum+PT+Sans:400,400i,700,700i,700&amp;subset=cyrillic" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Cuprum+PT+Sans:400,400i,700,700i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">-->
   </head>
   <body>
     <header class="main-header">
       <div class="header-user-navigation">
         <a class="button-logo">Техномарт</a>
         <div class="header-search">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="search-field">Поиск</label>
-            <input type="text" name="search" id="search-field">
+          <form class="user-search" action="https://echo.htmlacademy.ru" method="post">
+            <input class="search-text" type="text" name="search" placeholder="Поиск:">
+            <button class="button-search" type="submit"><span class="visually-hidden">Найти</span></button>
           </form>
         </div>
         <ul class="user-navigation">
