@@ -97,18 +97,18 @@
         <button class="button-slider-back">Назад</button>
         <button class="button-slider-next">Вперед</button>
         <ul>
-          <li class="namber">
-            <input type="radio">
+          <li class="slider-selector-button">
+            <button class="radio"><span class="visually-hidden">1</span></button>
           </li>
-          <li class="namber">
-            <input type="radio" checked>
+          <li class="slider-selector-button">
+            <button class="radio"><span class="visually-hidden">2</span></button>
           </li>
         </ul>
       </section>
 
       <section class="pop-goods">
         <h2 class="title">Популярные товары:</h2>
-        <a class="pop-goods-button" href="#">Все популярные товары</a>
+        <a class="pop-goods button" href="#">Все популярные товары</a>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3 class="catalog-item-title">
@@ -121,7 +121,7 @@
             </p>
             <p class="catalog-item-price">
               <b><del>32 500 ₽</del></b>
-              <b>25 500 ₽</b>
+              <b class="price">25 500 ₽</b>
             </p>
           </li>
           <li class="catalog-item">
@@ -135,7 +135,7 @@
             </p>
             <p class="catalog-item-price">
               <b><del>22 500 ₽</del></b>
-              <b>15 500 ₽</b>
+              <b class="price">15 500 ₽</b>
             </p>
           </li>
           <li class="catalog-item">
@@ -149,10 +149,10 @@
             </p>
             <p class="catalog-item-price">
               <b><del>30 500 ₽</del></b>
-              <b>25 500 ₽</b>
+              <b class="price">25 500 ₽</b>
             </p>
           </li>
-          <li class="catalog-item-carrent-new">
+          <li class="catalog-item-current-new">
             <h3 class="catalog-item-title">
               <a href="#">Перфоратор BOSCH BFG 2000</a>
             </h3>
@@ -162,7 +162,7 @@
               <img src="img/produkt-1.jpg" width="220" height="174" alt="Перфоратор BOSCH BFG 2000">
             </p>
             <p class="catalog-item-price">
-              <b>12 500 ₽</b>
+              <b class="price">12 500 ₽</b>
             </p>
           </li>
         </ul>
@@ -170,7 +170,7 @@
 
       <section class="brands">
         <h2 class="title">Популярные производители:</h2>
-        <button class="brands-button">Все производители</button>
+        <button class="brands button">Все производители</button>
         <ul class="brands-list">
           <li>
             <a href="#">
@@ -226,21 +226,21 @@
           <li>Кредит</li>
         </ul>
         <ul class="service-item">
-          <li class="active">
+          <li class="service-delivery active">
             <h3 class="title-delivery">Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!
             </p>
-          <li>
+          <li class="service-guarantee">
             <h3 class="title-guarantee">Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
               Дом уж восстановите как-нибудь сами.
             </p>
           </li>
-          <li>
+          <li class="service-credit">
             <h3 class="title-credit">Кредит</h3>
             <p>Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь.
@@ -250,12 +250,12 @@
         </ul>
       </section>
 
-      <section>
+      <section class="delivery">
         <h2 class="title">Компания«Техномарт</h2>
         <p class="preview">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p>
-        <p class="delivery">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+        <p class="delivery-post">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="delivery-item">
           <li>Деловые линии</li>
@@ -265,10 +265,10 @@
         <a class="button" href="#">Подробнее о компании</a>
       </section>
 
-      <section>
+      <section class="contacts">
         <h2 class="title">Контакты</h2>
         <div class="map">
-          <span>Вы можете забрать товар сами, заехав в наш офис:</span>
+          <p class="contacts-post">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a href="#">
             <img src="img/map-small.png" width="300" height="158" alt="Карта">
           </a>
@@ -327,13 +327,21 @@
     <section class="modal write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия"><br>
-        <label for="email-field">Ваш email:</label>
-        <input type="text" name="email" id="email-field" placeholder="email@example.com"><br>
-        <label for="letter-field">Текст письма:</label>
-        <textarea name="letter" id="letter-field" cols="50" rows="10">В свободной форме</textarea><br>
-        <input type="submit" value="Отправить">
+        <p class="name-field">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        </p>
+        <p class="email-field">
+          <label for="email-field">Ваш email:</label>
+          <input type="text" name="email" id="email-field" placeholder="email@example.com">
+        </p>
+        <p class="letter-field">
+          <label for="letter-field">Текст письма:</label>
+          <textarea name="letter" id="letter-field" cols="50" rows="10">В свободной форме</textarea>
+        </p>
+        <p class="button-submit">
+        <input class="button" type="submit" value="Отправить">
+        </p>
       </form>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
