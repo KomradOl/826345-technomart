@@ -2,14 +2,24 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans","Cuprum", sans-serif;
+  font-family: "PT Sans",Arial, sans-serif;
   font-size: 14px;
   line-height: 23px;
   color: #000000;
 
   background-color: #ffffff;
+}
 
-
+.main-header,
+.goods-category,
+.slider-tools,
+.popular-goods h2,
+.pop-goods .button,
+.brands h2,
+.brands .button,
+.page-title,
+.main-footer {
+  font-family: "Cuprum";
 }
 
 a {
@@ -276,7 +286,6 @@ color: rgba(255, 255, 255, 0.5);
 .delivery p,
 .contacts p,
 .info-tools p {
-  font-family:"Arial", sans-serif;
   font-size: 13px;
 }
 /*
