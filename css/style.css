@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans','Cuprum', sans-serif;
+  font-family: "PT Sans","Cuprum", sans-serif;
   font-size: 14px;
   line-height: 23px;
   color: #000000;
@@ -25,24 +25,38 @@ a {
   vertical-align: middle;
   text-transform: uppercase;
 
-  background-color: rgb(238,54,67);
+  background-color: rgb(238, 54, 67);
   border: none;
+}
+
+.main-header ul {
+  list-style: none;
 }
 
 .button-logo {
   text-transform: uppercase;
   font-size: 24px;
-  background-color: rgb(238,54,67);
-  border-bottom: 5px solid rgb(181,41,51)
+  background-color: rgb(238, 54, 67);
+  box-shadow: 0 5px 0 rgb(181, 41, 51);
 }
 
 .button-logo:hover,
 .button-logo:focus {
- background-color: rgb(202,44,55);
+ background-color: rgb(202, 44, 55);
 }
 
 .button-logo:active {
-background-color: rgb(186,39,50);
+background-color: rgb(186, 39, 50);
+}
+
+.search-text  {
+  background-color: rgb(41, 52, 73);
+  color: #ffffff;
+}
+
+.search-text:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .header-search label,
@@ -52,52 +66,44 @@ background-color: rgb(186,39,50);
 }
 
 .user-navigation .basket{
-  background-color: rgb(238,54,67);
+  background-color: rgb(238, 54, 67);
 }
 
 .user-navigation .button {
   font-size: 17px;
   text-transform: none;
-  background-color: rgb(99,166,62);
+  background-color: rgb(99, 166, 62);
 }
 
 .user-navigation .button:hover,
 .user-navigation .button:focus {
-  background-color: rgb(95,187,45);
+  background-color: rgb(95, 187, 45);
 }
 
 .user-navigation .button:active {
-background-color: rgb(81,133,52);
+background-color: rgb(81, 133, 52);
 }
 
 .header-user-navigation {
-  background-color: rgb(41,52,73);
+  background-color: rgb(41, 52, 73);
   color: #ffffff;
 }
 
-.header-user-navigation ul {
-  list-style: none;
-}
-
 .main-navigation {
-  background-color: rgb(243,247,249);
+  background-color: rgb(243, 247, 249);
   text-decoration: none;
-  list-style: none;
 }
 
-.main-navigation ul {
-  list-style: none;
-}
 
-p.page-title {
+.main-header .page-title {
   color: rgb(238,54,67);
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
 }
 
-p.phone {
-  color: rgb(238,54,67);
+.main-header .phone {
+  color: rgb(238, 54, 67);
   font-size: 21px;
   border: 3px solid #ffffff;
 }
@@ -111,11 +117,11 @@ p.phone {
 
 .user a:hover,
 .user a:focus {
-  color: rgb(238,54,67);
+  color: rgb(238, 54, 67);
 }
 
 .user a:active {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .output-profile {
@@ -130,11 +136,11 @@ p.phone {
 
 .orders a:hover,
 .orders a:focus {
-  color: rgb(238,54,67);
+  color: rgb(238, 54, 67);
 }
 
 .site-navigation {
-  background-color: rgb(50,66,92);
+  background-color: rgb(50, 66, 92);
 }
 
 .site-navigation a {
@@ -143,71 +149,91 @@ p.phone {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: rgb(41,52,73);
+  background-color: rgb(41, 52, 73);
 }
 
 .site-navigation a:active {
-background-color: rgb(41,52,73);
-color: rgba(255,255,255,0.5);
+background-color: rgb(41, 52, 73);
+color: rgba(255, 255, 255, 0.5);
 }
 
-/*.category-item-materials h3 {
+.base ul {
+  list-style: none;
+}
+/*
+.category-item-materials,
+.category-item-materials h3 {
   font-size: 24px;
-  background-color: rgb(255,191,71)
+  background-color: rgb(255,191,71);
+  color: rgb(255,255,255);
 }
 
 .category-item-materials a {
   font-size: 14px;
-  background-color: rgba(229,172,64,1)
+  background-color: rgb(255,191,71);
+  opacity: 0.5;
+}
+
+.category-item-materials a:hover,
+.category-item-materials a:focus {
+  opacity: 0.75;
+}
+
+.category-item-materials a:active {
+  opacity: 1;
 }
 
 .category-item-tool,
 .category-item-tool h3 {
   font-size: 24px;
-  background-color: rgb(59,188,227)
+  background-color: rgb(59,188,227);
+  color: rgb(255,255,255);
 }
 
 .category-item-tool a {
   font-size: 14px;
-  background-color: rgba(53,169,204,1)
+  background-color: rgb(53,169,204);
 }
 
 .category-item-equipment,
 .category-item-equipment h3 {
   font-size: 24px;
-  background-color: rgb(220,145,216)
+  background-color: rgb(220,145,216);
+  color: rgb(255,255,255);
 }
 
 .category-item-equipment a {
   font-size: 14px;
-  background-color: rgba(198,130,194,1)
+  background-color: rgb(198,130,194);
 }
 
 .category-item-discounts,
 .category-item-discounts h3 {
   font-size: 24px;
-  background-color: rgb(142,215,143)
+  background-color: rgb(142,215,143);
+  color: rgb(255,255,255);
 }
 
 .category-item-discounts a {
   font-size: 14px;
-  background-color: rgba(128,193,128,1)
+  background-color: rgb(128,193,128);
 }
 
 .category-item-delivery,
 .category-item-delivery h3 {
   font-size: 24px;
-  background-color: rgb(255,192,71)
+  background-color: rgb(255,192,71);
+  color: rgb(255,255,255);
 }
 
 .category-item-delivery a {
   font-size: 14px;
-  background-color: rgba(229,172,64,1)
+  background-color: rgb(229,172,64)
 }
 
 .slider-tools ul {
   list-style: none;
-  /*color: #ffffff;
+  color: #ffffff;
 }
 
 .slider-tools h3 {
@@ -232,7 +258,6 @@ color: rgba(255,255,255,0.5);
 
 .pop-goods ul,
 .brands ul {
-  list-style: none;
   background-color: #ffffff;
   color: #000000;
 }
@@ -246,7 +271,15 @@ color: rgba(255,255,255,0.5);
   background-color: rgb(238,54,67);
   color: #ffffff;
 }
-
+*/
+.slider-service p,
+.delivery p,
+.contacts p,
+.info-tools p {
+  font-family:"Arial", sans-serif;
+  font-size: 13px;
+}
+/*
 .slider-service h2 {
   font-size: 23px;
 }
@@ -255,58 +288,45 @@ color: rgba(255,255,255,0.5);
   font-size: 26px;
 }
 
-.slider-service p {
-  font-size: 10px;
-}
-
-.slider-service ul {
-  list-style: none;
-}
-
-ul.service-list {
+.service-list {
   font-size: 21px;
   background-color: rgb(50,66,92);
   color: #ffffff;
 }
 
-ul.service-list .active {
+.service-list .active {
   background-color: #ffffff;
   color: #000000;
-}*/
-
+}
+*/
 .delivery h2,
 .contacts h2 {
   font-size: 23px;
 }
 
-.delivery p,
-.contacts p {
-  font-size: 10px;
-}
-
-.delivery ul {
-  list-style: none;
+.delivery-item {
   background-color: #ffffff;
   color: #000000;
   font-size: 16px;
 }
 
-.footer-navigation ul,
-.footer-navigation p {
+.main-footer ul {
   list-style: none;
-  background-color: rgb(50,66,92);
-  color: #ffffff;
-  font-size: 17px;
 }
 
-.footer-navigation .site-navigation a:hover,
-.footer-navigation .site-navigation a:focus,
-.footer-navigation .catalog-navigation a:hover,
-.footer-navigation .catalog-navigation a:focus {
+.footer-navigation,
+.footer-contacts  {
+  background-color: rgb(50, 66, 92);
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
   text-decoration: underline;
 }
 
-.footer-navigation .site-navigation a:active {
+.footer-navigation a:active {
   color: rgba(255,255,255,0.5);
 }
 
@@ -315,23 +335,18 @@ ul.service-list .active {
 }
 
 .catalog-navigation a:active {
-  color: rgba(255,217,150,0.5);
+  color: rgba(255, 217, 150, 0.5);
 }
 
 .footer-item {
-  background-color: rgb(41,52,73);
+  background-color: rgb(41, 52, 73);
   color: #ffffff;
-  font-size: 10px;
-}
-
-
-.footer-item ul {
-  list-style: none;
+  font-size: 16px;
 }
 
 .footer-develop a,
 .footer-feedback a {
-  color: rgb(255,217,150);
+  color: rgb(255, 217, 150);
 }
 
 .footer-develop a:hover,
@@ -343,7 +358,7 @@ ul.service-list .active {
 
 .footer-develop a:active,
 .footer-feedback a:active {
-  color:rgb(238,54,67);
+  color:rgb(238, 54, 67);
 }
 
 /*.write-us {
