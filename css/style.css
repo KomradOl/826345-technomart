@@ -11,18 +11,6 @@ body {
   background-color: #ffffff;
 }
 
-
-.goods-category,
-.slider-tools,
-.popular-goods h2,
-.pop-goods .button,
-.brands h2,
-.brands .button,
-.page-title,
-.main-footer {
-  font-family: "Cuprum";
-}
-
 a {
   text-decoration: none;
   color: #ffffff;
