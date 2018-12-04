@@ -3,14 +3,15 @@ body {
   padding: 0;
 
   font-family: "PT Sans",Arial, sans-serif;
-  font-size: 14px;
-  line-height: 23px;
+  font-size: 13px;
+  line-height: 24px;
   color: #000000;
-
+  font-weight: 400;
+  font-style: normal;
   background-color: #ffffff;
 }
 
-.main-header,
+
 .goods-category,
 .slider-tools,
 .popular-goods h2,
@@ -27,7 +28,7 @@ a {
   color: #ffffff;
 }
 
-.button {
+/*.button {
   font: inherit;
 
   text-align: center;
@@ -37,6 +38,12 @@ a {
 
   background-color: rgb(238, 54, 67);
   border: none;
+}*/
+
+.main-header {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main-header ul {
@@ -46,6 +53,8 @@ a {
 .button-logo {
   text-transform: uppercase;
   font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
   background-color: rgb(238, 54, 67);
   box-shadow: 0 5px 0 rgb(181, 41, 51);
 }
@@ -60,8 +69,14 @@ background-color: rgb(186, 39, 50);
 }
 
 .search-text  {
+  font-size: 17px;
+  line-height: 18px;
   background-color: rgb(41, 52, 73);
   color: #ffffff;
+}
+
+.search-text:focus {
+  background-color: rgb(33, 42, 58);
 }
 
 .search-text:hover {
@@ -69,19 +84,31 @@ background-color: rgb(186, 39, 50);
   color: #000000;
 }
 
-.header-search label,
-.user-navigation {
+.user-navigation a,
+.user-navigation a:focus {
   font-size: 17px;
-  text-transform: none;
+  line-height: 18px;
+  background-color: rgb(41, 52, 73)
+  color: #ffffff;
+}
+
+.user-navigation a:hover {
+  background-color: rgb(33, 42, 58)
+}
+
+.user-navigation a:active {
+  opacity: 0.6;
 }
 
 .user-navigation .basket{
+  font-size: 17px;
+  line-height: 18px;
   background-color: rgb(238, 54, 67);
 }
 
 .user-navigation .button {
   font-size: 17px;
-  text-transform: none;
+  line-height: 18px;
   background-color: rgb(99, 166, 62);
 }
 
@@ -91,7 +118,7 @@ background-color: rgb(186, 39, 50);
 }
 
 .user-navigation .button:active {
-background-color: rgb(81, 133, 52);
+opacity: 0.6;
 }
 
 .header-user-navigation {
@@ -101,26 +128,32 @@ background-color: rgb(81, 133, 52);
 
 .main-navigation {
   background-color: rgb(243, 247, 249);
-  text-decoration: none;
 }
 
-
-.main-header .page-title {
-  color: rgb(238,54,67);
+.main-navigation .page-title {
   font-size: 16px;
-  font-style: italic;
   line-height: 23px;
+  color: rgb(238,54,67);
+  font-style: italic;
 }
 
-.main-header .phone {
-  color: rgb(238, 54, 67);
+.main-navigation .phone {
   font-size: 21px;
+  line-height: 21px;
+  color: rgb(238, 54, 67);
   border: 3px solid #ffffff;
 }
 
+.main-navigation .address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
 .user a,
-.profile {
+.profile  {
   font-size: 21px;
+
   color: #000000;
   background-color: #ffffff;
 }
@@ -131,17 +164,20 @@ background-color: rgb(81, 133, 52);
 }
 
 .user a:active {
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  opacity: 0.3;
 }
 
-.output-profile {
-  color: #000000;
+.profile:active {
+  background-color: #ffffff;
+  opacity: 0.3;
 }
 
 .orders a {
   font-size: 16px;
+  line-height: 18px;
   text-decoration: underline;
-  color: #000000;
+  color: rgb(50, 66, 92);
 }
 
 .orders a:hover,
@@ -149,12 +185,20 @@ background-color: rgb(81, 133, 52);
   color: rgb(238, 54, 67);
 }
 
+.orders a:active {
+  color: rgb(50, 66, 92);
+  opacity: 0.3;
+}
+
 .site-navigation {
   background-color: rgb(50, 66, 92);
+  box-shadow: 0 5px 0 rgb(41, 52, 73);
 }
 
 .site-navigation a {
-    font-size: 17px;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
 }
 
 .site-navigation a:hover,
@@ -163,12 +207,118 @@ background-color: rgb(81, 133, 52);
 }
 
 .site-navigation a:active {
-background-color: rgb(41, 52, 73);
-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
 }
 
 .base ul {
   list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-carrent {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgb(50, 66, 92);
+  text-transform: uppercase;
+}
+
+.catalog-item-title a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+b {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgb(169, 169, 169);
+}
+
+b.price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: rgb(238, 54, 67);
+}
+
+.catalog-item-image .button {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-item-image .button:nth-child(1) {
+  color: #ffffff;
+  background-color: rgb(99, 166, 62);
+  box-shadow: 0 3px 0 rgb(54, 115, 21);
+}
+
+.catalog-item-image .button:nth-child(1):hover,
+.catalog-item-image .button:nth-child(1):focus {
+  background-color: rgb(95, 187, 45);
+}
+
+.catalog-item-image .button:nth-child(1):active {
+  background-color: rgb(54, 115, 21);
+}
+
+.catalog-item-image .button:nth-child(2) {
+  color: rgb(50, 66, 92);
+  background-color: #ffffff;
+  border: 3px solid rgb(99, 166, 62);
+}
+
+.catalog-item-image .button:nth-child(2):hover,
+.catalog-item-image .button:nth-child(2):focus {
+  border: 3px solid rgb(50, 66, 92);
+}
+
+.catalog-item-image .button:nth-child(2):active {
+  opacity: 0.3;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.checkbox,
+.radio {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-submit {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
 }
 /*
 .category-item-materials,
@@ -282,12 +432,6 @@ color: rgba(255, 255, 255, 0.5);
   color: #ffffff;
 }
 */
-.slider-service p,
-.delivery p,
-.contacts p,
-.info-tools p {
-  font-size: 13px;
-}
 /*
 .slider-service h2 {
   font-size: 23px;
@@ -310,13 +454,53 @@ color: rgba(255, 255, 255, 0.5);
 */
 .delivery h2,
 .contacts h2 {
-  font-size: 23px;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.delivery p,
+.contacts p {
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .delivery-item {
   background-color: #ffffff;
   color: #000000;
   font-size: 16px;
+  line-height: 20px;
+}
+
+.delivery .button,
+.contacts .button {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgb(238, 54, 67);
+}
+
+.delivery .button:hover,
+.contacts .button:hover,
+.delivery .button:focus,
+.contacts .button:focus {
+  background-color: rgb(202, 44, 55);
+}
+
+.delivery .button:active,
+.contacts .button:active {
+  background-color: rgb(186, 39, 50);
+}
+
+.main-footer {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main-footer ul {
@@ -328,18 +512,22 @@ color: rgba(255, 255, 255, 0.5);
   background-color: rgb(50, 66, 92);
   color: #ffffff;
   font-size: 18px;
+  line-height: 24px;
 }
 
-.footer-navigation a:hover,
-.footer-navigation a:focus {
+.footer-catalog-navigation a:hover,
+.footer-catalog-navigation a:focus,
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus {
   text-decoration: underline;
 }
 
-.footer-navigation a:active {
-  color: rgba(255,255,255,0.5);
+.footer-catalog-navigation a:active,
+.footer-site-navigation a:active {
+  opacity: 0.5;
 }
 
-.catalog-navigation a {
+.footer-catalog-navigation a {
   color: rgb(255,217,150);
 }
 
@@ -351,6 +539,7 @@ color: rgba(255, 255, 255, 0.5);
   background-color: rgb(41, 52, 73);
   color: #ffffff;
   font-size: 16px;
+  line-height: 18px;
 }
 
 .footer-develop a,
