@@ -67,10 +67,10 @@
       <h1 class="page-title">Перфораторы</h1>
       <section class="sort">
         <h2 class="title-sort">Сортировка:</h2>
-        <ul class="sort-item">
+        <ul class="sort-items">
           <li class="sort-item-current">По цене</li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
+          <li><a class="sort-item" href="#">По типу</a></li>
+          <li><a class="sort-item" href="#">По функционалу</a></li>
         </ul>
         <a class="button-back" href="#"><span class="visually-hidden">По убыванию</span></a>
         <a class="button-next" href="#"><span class="visually-hidden">По возрастанию</span></a>
@@ -78,9 +78,9 @@
 
       <section class="filters">
         <h2 class="title-filter">Фильтр</h2>
+        <h3 class="title-price">Цена</h3>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="price">
-            <h3 class="title-price">Цена</h3>
             <div class="filter-price-bar">
               <button class="filter-button-min" type="button"><span class="visually-hidden">По убыванию</span></button>
               <button class="filter-button-max" type="button"><span class="visually-hidden">По возрастанию</span></button>
@@ -264,10 +264,10 @@
       <section class="pagination">
         <h2 class="visually-hidden">Номера страниц</h2>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item-button"><a href="#">Слудующая</a></li>
+          <li><a class="pagination-item pagination-item-current">1</a></li>
+          <li><a class="pagination-item" href="#">2</a></li>
+          <li><a class="pagination-item" href="#">3</a></li>
+          <li><a class="pagination-item button" href="#">Следующая</a></li>
         </ul>
       </section>
 
@@ -328,8 +328,10 @@
     </footer>
     <section class="modal-choice">
       <h2 class="title-choice">Товар добавлен в корзину</h2>
-      <a class="button" href="#">Оформить заказ</a>
-      <a class="button" href="#">Продолжить покупки</a>
+      <div class="modal-choice-button">
+        <a class="button" href="#">Оформить заказ</a>
+        <a class="button" href="#">Продолжить покупки</a>
+      </div>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
