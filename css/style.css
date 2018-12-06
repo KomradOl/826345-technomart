@@ -198,7 +198,7 @@ a {
   color: #000000;
 }
 
-h1 {
+.base h1 {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -216,14 +216,14 @@ h1 {
   color: #000000;
 }
 
-b {
+.catalog-item-price b {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: rgb(169, 169, 169);
 }
 
-b.price {
+.catalog-item-price .price {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -303,11 +303,11 @@ b.price {
   color: rgb(238, 54, 67);
 }
 
-fieldset {
+.filters fieldset {
   border: none;
 }
 
-legend,
+.filters legend,
 .filters h3 {
   font-weight: 700;
   font-style: normal;
@@ -332,159 +332,73 @@ legend,
   color: #000000;
 }
 
-.category-item-materials {
+.category-item {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
-  background-color: rgb(255, 191, 71);
   text-transform: uppercase;
 }
 
-.category-item-materials h3 {
+.category-item h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+}
+
+.category-item a {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.9;
+}
+
+.category-item a:hover,
+.category-item a:focus {
+  opacity: 0.8;
+}
+
+.category-item a:active {
+  opacity: 0.7;
+}
+
+.category-item-materials {
+  background-color: rgb(255, 191, 71);
 }
 
 .category-item-materials a {
-  font-size: 14px;
-  line-height: 18px;
   background-color: rgb(229, 172, 69);
-  opacity: 0.9;
-}
-
-.category-item-materials a:hover,
-.category-item-materials a:focus {
-  opacity: 0.8;
-}
-
-.category-item-materials a:active {
-  opacity: 0.7;
 }
 
 .category-item-tool {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-  background-color: rgb(59,188,227);
-  text-transform: uppercase;
-}
-
-.category-item-tool h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
+  background-color: rgb(59, 188, 227);
 }
 
 .category-item-tool a {
-  font-size: 14px;
-  line-height: 18px;
-  background-color: rgb(53,169,204);
-  opacity: 0.9;
-}
-
-.category-item-tool a:hover,
-.category-item-tool a:focus {
-  opacity: 0.8;
-}
-
-.category-item-tool a:active {
-  opacity: 0.7;
+  background-color: rgb(53, 169, 204);
 }
 
 .category-item-equipment {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-  background-color: rgb(220,145,216);
-  text-transform: uppercase;
-}
-
-.category-item-equipment h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
+  background-color: rgb(220, 145, 216);
 }
 
 .category-item-equipment a {
-  font-size: 14px;
-  line-height: 18px;
-  background-color: rgb(198,130,194);
-  opacity: 0.9;
-}
-
-.category-item-equipment a:hover,
-.category-item-equipment a:focus {
-  opacity: 0.8;
-}
-
-.category-item-equipment a:active {
-  opacity: 0.7;
+  background-color: rgb(198, 130, 194);
 }
 
 .category-item-discounts {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-  background-color: rgb(142,215,143);
-  text-transform: uppercase;
-}
-
-.category-item-discounts h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
+  background-color: rgb(142, 215, 143);
 }
 
 .category-item-discounts a {
-  font-size: 14px;
-  line-height: 18px;
-  background-color: rgb(128,193,128);
-  opacity: 0.9;
+  background-color: rgb(128, 193, 128);
 }
 
-.category-item-discounts a:hover,
-.category-item-discounts a:focus {
-  opacity: 0.8;
-}
-
-.category-item-discounts a:active {
-  opacity: 0.7;
-}
-
-.category-item-delivery{
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-  background-color: rgb(255,192,71);
-  text-transform: uppercase;
-}
-
-.category-item-delivery h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
+.category-item-delivery {
+  background-color: rgb(255, 192, 71);
 }
 
 .category-item-delivery a {
-  font-size: 14px;
-  line-height: 18px;
-  background-color: rgb(229,172,64);
-  opacity: 0.9;
-}
-
-.category-item-delivery a:hover,
-.category-item-delivery a:focus {
-  opacity: 0.8;
-}
-
-.category-item-delivery a:active {
-  opacity: 0.7;
+  background-color: rgb(229, 172, 64);
 }
 
 .slider-tools {
@@ -576,21 +490,14 @@ legend,
 .brands-item:hover,
 .catalog-item:focus,
 .brands-item:focus {
-  box-shadow: -20px 0 20px 0 rgb(207, 210, 214),
-  20px 0 20px 0 rgb(207, 210, 214),
-  0 -9px 9px 0 rgb(239, 240, 241),
-  0 30px 30px 0 rgb(171, 175, 184);
+  box-shadow: 10px 0 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .brands-item:active {
-  box-shadow: -7px 0 7px 0 rgb(207, 210, 214),
-  7px 0 7px 0 rgb(207, 210, 214),
-  0 -3px 3px 0 rgb(239, 240, 241),
-  0 10px 10px 0 rgb(171, 175, 184);
-  opacity: 0.7;
+  box-shadow: 4px 0 10px 0 rgba(41, 52, 73, 0.5)
 }
 
-.price  {
+.filter-price  {
   background-color: rgb(247, 243, 236);
   color: #ffffff;
 }
@@ -790,10 +697,7 @@ legend,
 
 .modal-write-us {
   border-top: 7px solid rgb(255,83,87);
-  box-shadow: -20px 0 20px 0 rgb(207, 210, 214),
-  20px 0 20px 0 rgb(207, 210, 214),
-  0 -9px 9px 0 rgb(239, 240, 241),
-  0 30px 30px 0 rgb(171, 175, 184);
+  box-shadow: 20px 0 40px 0 rgba(41, 52, 73, 0.25);
 }
 
 .modal-write-us label {
@@ -841,10 +745,7 @@ legend,
 
 .modal-choice {
   border-top: 7px solid rgb(255,83,87);
-  box-shadow: -20px 0 20px 0 rgb(207, 210, 214),
-  20px 0 20px 0 rgb(207, 210, 214),
-  0 -9px 9px 0 rgb(239, 240, 241),
-  0 30px 30px 0 rgb(171, 175, 184);
+  box-shadow: 20px 0 40px 0 rgba(41, 52, 73, 0.25);
 }
 
 .modal-choice h2 {
