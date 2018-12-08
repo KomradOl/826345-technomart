@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 1200px;
   font-family: "PT Sans",Arial, sans-serif;
@@ -237,7 +237,6 @@ a {
 
 .site-navigation {
   display: flex;
-
   justify-content: space-between;
   width: 940px;
   margin: 0 auto;
@@ -623,12 +622,18 @@ a {
 }
 
 .slider-service h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
 }
 
 .slider-service h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 36px;
   line-height: 36px;
   color: rgb(50, 66, 92);
@@ -695,6 +700,9 @@ a {
 
 .delivery h2,
 .contacts h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
