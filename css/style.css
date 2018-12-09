@@ -14,6 +14,26 @@ body {
 a {
   text-decoration: none;
   color: #ffffff;
+
+}
+.button {
+  font-family: "Cuprum", Arial, sans-serif;/* 11,12*/
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: rgb(238, 54, 67);
+  color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+ background-color: rgb(202, 44, 55);
+}
+
+.button:active {
+  background-color: rgb(186, 39, 50);
 }
 
 .main-header {
@@ -37,7 +57,7 @@ a {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -120,22 +140,20 @@ a {
   background-color: rgb(238, 54, 67);
 }
 
-.user-navigation .button {
+.user-navigation .checkout {
   font-size: 17px;
   line-height: 18px;
   background-color: rgb(99, 166, 62);
 }
 
-.user-navigation .button:hover,
-.user-navigation .button:focus {
+.user-navigation .checkout:hover,
+.user-navigation .checkout:focus {
   background-color: rgb(95, 187, 45);
 }
 
-.user-navigation .button:active {
+.user-navigation .checkout:active {
   opacity: 0.4;
 }
-
-
 
 .main-navigation {
   display: flex;
@@ -148,13 +166,11 @@ a {
   min-width: 240px;
   margin-top: 50px;
   margin-left: 180px;
-
   font-size: 16px;
   line-height: 23px;
   color: rgb(238, 54, 67);
   font-style: italic;
   text-align: left;
-
 }
 
 .contacts {
@@ -252,6 +268,11 @@ a {
   opacity: 0.5;
 }
 
+.base {
+  width: 100%;
+  background-color:#ffffff;
+}
+
 .base ul {
   list-style: none;
 }
@@ -262,11 +283,6 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-}
-
-.base {
-  width: 100%;
-  background-color:#ffffff;
 }
 
 .base h1 {
@@ -313,42 +329,33 @@ a {
   background-color: rgb(238, 54, 67);
 }
 
-.catalog-item-image .button {
-  font-family: "Cuprum", Arial, sans-serif;/* 11,12*/
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.catalog-item-image .button:nth-child(1) {
+.button.pay {
   color: #ffffff;
   background-color: rgb(99, 166, 62);
   box-shadow: 0 3px 0 rgb(54, 115, 21);
 }
 
-.catalog-item-image .button:nth-child(1):hover,
-.catalog-item-image .button:nth-child(1):focus {
+.button.pay:hover,
+.button.pay:focus {
   background-color: rgb(95, 187, 45);
 }
 
-.catalog-item-image .button:nth-child(1):active {
+.button.pay:active {
   background-color: rgb(54, 115, 21);
 }
 
-.catalog-item-image .button:nth-child(2) {
+.button.bookmarks {
   color: rgb(50, 66, 92);
   background-color: #ffffff;
   border: 3px solid rgb(99, 166, 62);
 }
 
-.catalog-item-image .button:nth-child(2):hover,
-.catalog-item-image .button:nth-child(2):focus {
+.button.bookmarks:hover,
+.button.bookmarks:focus {
   border: 3px solid rgb(50, 66, 92);
 }
 
-.catalog-item-image .button:nth-child(2):active {
+.button.bookmarks:active {
   opacity: 0.7;
 }
 
@@ -365,8 +372,7 @@ a {
   background-color: rgb(247, 243, 236);
 }
 
-.sort-item
- {
+.sort-item {
   font-size: 13px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.7);
@@ -429,9 +435,7 @@ a {
   font-weight: 700;
 }
 
-.category-item a { /* 6-10*/
-  font-size: 14px;
-  line-height: 18px;
+.category-item a {
   opacity: 0.9;
 }
 
@@ -448,7 +452,7 @@ a {
   background-color: rgb(255, 191, 71);
 }
 
-.category-item-materials a {
+.button.materials {
   background-color: rgb(229, 172, 69);
 }
 
@@ -456,7 +460,7 @@ a {
   background-color: rgb(59, 188, 227);
 }
 
-.category-item-tool a {
+.button.tool  {
   background-color: rgb(53, 169, 204);
 }
 
@@ -464,7 +468,7 @@ a {
   background-color: rgb(220, 145, 216);
 }
 
-.category-item-equipment a {
+.button.equipment {
   background-color: rgb(198, 130, 194);
 }
 
@@ -472,7 +476,7 @@ a {
   background-color: rgb(142, 215, 143);
 }
 
-.category-item-discounts a {
+.button.discounts  {
   background-color: rgb(128, 193, 128);
 }
 
@@ -480,7 +484,7 @@ a {
   background-color: rgb(255, 192, 71);
 }
 
-.category-item-delivery a {
+.button.delivery {
   background-color: rgb(229, 172, 64);
 }
 
@@ -507,22 +511,6 @@ a {
   line-height: 18px;
 }
 
-.slider-tools a {
-  font-size: 14px;
-  line-height: 18px;
-  background-color: rgb(238, 54, 67);
-  text-transform: uppercase;
-}
-
-.slider-tools a:hover,
-.slider-tools a:focus {
-  background-color: rgb(202, 44, 55);
-}
-
-.slider-tools a:active {
-  background-color: rgb(186, 39, 50);
-}
-
 .popular-goods h2,
 .brands h2 {
   font-family: "Cuprum", Arial, sans-serif;
@@ -533,30 +521,6 @@ a {
   color: rgb(50, 66, 92);
   background-color: rgb(243, 247, 249);
   text-transform: uppercase;
-}
-
-.pop-goods-button,
-.brands-button {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: rgb(238, 54, 67);
-  text-transform: uppercase;
-}
-
-.pop-goods-button:hover,
-.brands-button:hover,
-.pop-goods-button:focus,
-.brands-button:focus {
-  background-color: rgb(202, 44, 55);
-}
-
-.pop-goods-button:active,
-.brands-button:active {
-  background-color: rgb(186, 39, 50);
 }
 
 .popular {
@@ -644,26 +608,6 @@ a {
   color: #000000;
 }
 
-.service-credit a {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: rgb(238, 54, 67);
-  text-transform: uppercase;
-}
-
-.service-credit a:hover,
-.service-credit a:focus {
-  background-color: rgb(202, 44, 55);
-}
-
-.service-credit a:active {
-  background-color: rgb(186, 39, 50);
-}
-
 .index-columns {
   display: flex;
   justify-content: space-between;
@@ -709,29 +653,6 @@ a {
   line-height: 20px;
 }
 
-.delivery .button,
-.contacts .button {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: rgb(238, 54, 67);
-}
-
-.delivery .button:hover,
-.contacts .button:hover,
-.delivery .button:focus,
-.contacts .button:focus {
-  background-color: rgb(202, 44, 55);
-}
-
-.delivery .button:active,
-.contacts .button:active {
-  background-color: rgb(186, 39, 50);
-}
 .info-tools {
   background-color: rgb(242, 246, 248);
 }
@@ -843,26 +764,6 @@ a {
   background-color: rgb(244, 244, 244);
 }
 
-.modal-write-us .button {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: rgb(238, 54, 67);
-}
-
-.modal-write-us .button:hover,
-.modal-write-us .button:focus {
-  background-color: rgb(202, 44, 55);
-}
-
-.modal-write-us .button:active {
-  background-color: rgb(186, 39, 50);
-}
-
 .modal-choice {
   border-top: 7px solid rgb(255,83,87);
   box-shadow: 20px 0 40px 0 rgba(41, 52, 73, 0.25);
@@ -882,7 +783,7 @@ a {
   background-color: rgb(241, 241, 241);
 }
 
-.modal-choice-button a:nth-child(1) {
+.button.check {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -893,13 +794,7 @@ a {
   background-color: rgb(238, 54, 67);
 }
 
-.modal-choice-button a:nth-child(2) {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
+.button.continue {
   color:#000000;
-  text-transform: uppercase;
   background-color: #ffffff;
 }
