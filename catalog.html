@@ -16,7 +16,7 @@
             <div class="header-search">
               <form class="user-search" action="https://echo.htmlacademy.ru" method="post">
                 <input class="search-text" type="text" name="search" placeholder="Поиск:">
-                <button class="button-search" type="submit"><span class="visually-hidden">Найти</span></button>
+                <input class="visually-hidden" type="submit"><span class="visually-hidden">Найти</span>
               </form>
             </div>
             <ul class="user-navigation">
@@ -29,8 +29,8 @@
       </div>
       <div class="container">
         <div class="main-navigation">
-          <p class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          <div class="contacts">
+          <p class="score-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <div class="score-contacts">
             <p class="phone">
               +7 (812) 555-05-55
             </p>
@@ -73,34 +73,44 @@
         </ul>
         <h1 class="page-title">Перфораторы</h1>
         <section class="sort">
-          <h2 class="title-sort">Сортировка:</h2>
-          <ul class="sort-items">
-            <li class="sort-item-current">По цене</li>
-            <li><a class="sort-item" href="#">По типу</a></li>
-            <li><a class="sort-item" href="#">По функционалу</a></li>
-          </ul>
-          <a class="button-back" href="#"><span class="visually-hidden">По убыванию</span></a>
-          <a class="button-next" href="#"><span class="visually-hidden">По возрастанию</span></a>
+          <div class="sort-index-column">
+            <h2 class="title-filter">Фильтр</h2>
+            <div class="sort-wrapper">
+              <h2 class="title-sort">Сортировка:</h2>
+              <ul class="sort-items">
+                <li class="sort-item-current">По цене</li>
+                <li><a class="sort-item" href="#">По типу</a></li>
+                <li><a class="sort-item" href="#">По функционалу</a></li>
+              </ul>
+              <a class="button-back" href="#"><span class="visually-hidden">По убыванию</span></a>
+              <a class="button-next" href="#"><span class="visually-hidden">По возрастанию</span></a>
+            </div>
+          </div>
         </section>
         <div class="catalog-index-columns">
           <section class="filters">
-            <h2 class="title-filter">Фильтр</h2>
+            <h2 class="visually-hidden">Выбор параметров</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
                 <legend>Цена</legend>
                 <div class="filter-price">
-                  <div class="price-width">
-                    <label for="pricescount" class="visually-hidden">Цена от 0</label>
-                    <input type="range" id="pricescount" name="pricescount" min="0" max="40000" step="1000" value="0">
-                    <label for="pricescount" class="visually-hidden">Цена от 30000</label>
-                    <input type="range" id="pricescount" name="pricescount" min="0" max="40000" step="1000" value="30000">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
                   </div>
                   <div class="price-value">
+                    <div class="price-min">
                     <label for="price-min"><span class="visually-hidden">от</span></label>
                     <input id="price-min" type="text" name="price" value="0" placeholder="0">
-                    <span>-</span>
+                    </div>
+                    <span class="dash">-</span>
+                    <div class="price-max">
                     <label for="price-max"><span class="visually-hidden">до</span></label>
                     <input id="price-max" type="text" name="price" value="30000" placeholder="30000">
+                    </div>
                   </div>
                 </div>
               </fieldset>

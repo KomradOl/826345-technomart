@@ -16,7 +16,7 @@
             <div class="header-search">
               <form class="user-search" action="https://echo.htmlacademy.ru" method="post">
                 <input class="search-text" type="text" name="search" placeholder="Поиск:">
-                <button class="button-search" type="submit"><span class="visually-hidden">Найти</span></button>
+                <input class="visually-hidden" type="submit"><span class="visually-hidden">Найти</span>
               </form>
             </div>
             <ul class="user-navigation">
@@ -29,14 +29,14 @@
       </div>
       <div class="container">
         <div class="main-navigation">
-          <p class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          <div class="contacts">
+          <p class="score-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <div class="score-contacts">
             <p class="phone">
               +7 (812) 555-05-55
             </p>
-            <p class="address">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </p>
+            <div class="address">
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
           </div>
           <ul class="user">
             <li><a class="user-entrance" href="login.html">Войти</a></li>
@@ -60,6 +60,7 @@
       <div class="container">
         <section class="category-item">
           <h2 class="visually-hidden">Категории товаров</h2>
+          <div class="category-index-columns">
             <div class="category-item-materials new">
               <h3 class="title-category">Материалы</h3>
               <a  class="button materials" href="#">На любой вкус</a>
@@ -72,34 +73,39 @@
               <h3 class="title-category">Техника</h3>
               <a class="button equipment" href="#">Для стройки</a>
             </div>
-            <div class="category-item-discounts">
-              <h3 class="title-category">Скидки 50%</h3>
-              <a class="button discounts" href="#">На 350 товаров</a>
-            </div>
-            <div class="category-item-delivery">
-              <h3 class="title-category">Доставка</h3>
-              <a class="button delivery" href="#">Бесплатно</a>
-            </div>
+          </div>
         </section>
 
         <section class="slider-tools">
           <h2 class="visually-hidden">Категории инструментов</h2>
-          <ul class="slider-content">
-            <li>
-              <h3>Дрели</h3>
-              <p>Соседям на радость
+          <div class="slider-content">
+            <div class="slider-index-column">
+              <div class="slider-visually">
                 <img src="img/img-1.jpg" width="620" height="266" alt="Дрели">
-              </p>
-              <a class="button" href="catalog.html">Открыть каталог</a>
-            </li>
-            <li>
+                <h3>Дрели</h3>
+                <p>Соседям на радость</p>
+                <a class="button" href="catalog.html">Открыть каталог</a>
+              </div>
+              <div class="category-wrapper">
+                <div class="category-discounts">
+                  <h3 class="title-category">Скидки 50%</h3>
+                  <a class="button discounts" href="#">На 350 товаров</a>
+                </div>
+                <div class="category-delivery">
+                  <h3 class="title-category">Доставка</h3>
+                  <a class="button delivery" href="#">Бесплатно</a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-hidden">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки
                 <img src="img/img-2.jpg" width="620" height="266" alt="Перфораторы">
               </p>
               <a class="button catalog" href="catalog.html">Открыть каталог</a>
-            </li>
-          </ul><!--Оживляем через js-->
+            </div>
+          </div>
+          <!--Оживляем через js-->
           <button class="button-slider-back">Назад</button>
           <button class="button-slider-next">Вперед</button>
           <ul>
@@ -179,48 +185,56 @@
         <section class="brands">
           <div class="popular">
             <h2 class="title">Популярные производители:</h2>
-            <a class="button brands" href="#">Все производители</button>
+            <a class="button brand" href="#">Все производители</a>
           </div>
           <ul class="brands-list">
             <li class="brands-item">
-              <a href="#">
-                <img src="img/bosch.png" width="126" height="37" alt="BOSCH">
-              </a>
+              <div class="brands-item-columns bosch">
+                <a href="#">
+                  <img src="img/bosch.png" width="126" height="37" alt="BOSCH">
+                </a>
+              </div>
+              <div class="brands-item-columns hitachi">
+                <a href="#">
+                  <img src="img/hitachi.png" width="169" height="31" alt="Hitachi">
+                </a>
+              </div>
             </li>
             <li class="brands-item">
-              <a href="#">
-                <img src="img/makita.png" width="123" height="40" alt="Makita">
-              </a>
+              <div class="brands-item-columns makita">
+                <a href="#">
+                  <img src="img/makita.png" width="123" height="40" alt="Makita">
+                </a>
+              </div>
+              <div class="brands-item-columns lg">
+                <a href="#">
+                  <img src="img/lg.png" width="121" height="73" alt="LG">
+                </a>
+              </div>
             </li>
             <li class="brands-item">
-              <a href="#">
-                <img src="img/dewalt.png" width="146" height="44" alt="DeWalt">
-              </a>
+              <div class="brands-item-columns dewalt">
+                <a href="#">
+                  <img src="img/dewalt.png" width="146" height="44" alt="DeWalt">
+                </a>
+              </div>
+              <div class="brands-item-columns aeg">
+                <a href="#">
+                  <img src="img/aeg.png" width="151" height="96" alt="AEG">
+                </a>
+              </div>
             </li>
             <li class="brands-item">
-              <a href="#">
-                <img src="img/intersckol.png" width="218" height="66" alt="Интерскол">
-              </a>
-            </li>
-            <li class="brands-item">
-              <a href="#">
-                <img src="img/hitachi.png" width="169" height="31" alt="Hitachi">
-              </a>
-            </li>
-            <li class="brands-item">
-              <a href="#">
-                <img src="img/lg.png" width="121" height="73" alt="LG">
-              </a>
-            </li>
-            <li class="brands-item">
-              <a href="#">
-                <img src="img/aeg.png" width="151" height="96" alt="AEG">
-              </a>
-            </li>
-            <li class="brands-item">
-              <a href="#">
-                <img src="img/metabo.png" width="204" height="69" alt="Metabo">
-              </a>
+              <div class="brands-item-columns intersckol">
+                <a href="#">
+                  <img src="img/intersckol.png" width="218" height="66" alt="Интерскол">
+                </a>
+              </div>
+              <div class="brands-item-columns metabo">
+                <a href="#">
+                  <img src="img/metabo.png" width="204" height="69" alt="Metabo">
+                </a>
+              </div>
             </li>
           </ul>
         </section>
@@ -228,38 +242,44 @@
 
       <section class="slider-service">
         <div class="container">
-          <h2 class="title-service">Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами!
-              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-          </p>
-          <ul class="service-list">
-            <li class="active">Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
-          </ul>
-          <ul class="service-item">
-            <li class="service-delivery active">
-              <h3 class="title-delivery">Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
-                поднимая его на ваш этаж!
+          <div class="index-columns-service">
+            <div class="service-wrapper">
+              <h2 class="title-service">Сервисы</h2>
+              <p>Хороший интернет-магазин отличается от плохого не только ценами!
+                  Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
               </p>
-            <li class="service-guarantee">
-              <h3 class="title-guarantee">Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит,
-                а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-                Дом уж восстановите как-нибудь сами.
-              </p>
-            </li>
-            <li class="service-credit">
-              <h3 class="title-credit">Кредит</h3>
-              <p>Залезть в долговую яму стало проще!
-                  Кредитные консультанты придут вам на помощь.
-              </p>
-              <a class="button send" href="#">Отправить заявку</a>
-            </li>
-          </ul>
+            </div>
+            <div class="service-index-column">
+              <table class="service-list">
+                <tr class="active"><td>Доставка</td></tr>
+                <tr><td>Гарантия</td></tr>
+                <tr><td>Кредит</td></tr>
+              </table>
+              <ul class="service-item">
+                <li class="service-delivery active">
+                  <h3 class="title-delivery">Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно!
+                    Ведь мы неплохо заработаем,
+                    поднимая его на ваш этаж!
+                  </p>
+                <li class="service-guarantee">
+                  <h3 class="title-guarantee">Гарантия</h3>
+                  <p>Если купленный у нас товар поломается или заискрит,
+                    а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
+                </li>
+                <li class="service-credit">
+                  <h3 class="title-credit">Кредит</h3>
+                  <p>Залезть в долговую яму стало проще!
+                      Кредитные консультанты придут вам на помощь.
+                  </p>
+                  <a class="button send" href="#">Отправить заявку</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <div class="container">
