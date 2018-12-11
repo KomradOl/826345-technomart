@@ -17,7 +17,7 @@ a {
 
 }
 .button {
-  font-family: "Cuprum", Arial, sans-serif;/* 11,12*/
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -370,11 +370,12 @@ input[type="radio"].visually-hidden {
 
 .sort {
   background-color: rgb(247, 243, 236);
+  display: flex;
+  justify-content: space-between;
 }
 
 .sort-index-column {
-  display: flex;
-  justify-content: space-between;
+
 }
 
 .sort h2 {
@@ -507,7 +508,7 @@ input[type="radio"].visually-hidden {
   width: 80%;
   height: 2px;
 
-  background: #ffffff;
+  background: #00ca74;
 }
 
 .range-toggle {
@@ -551,7 +552,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.category-index-columns {
+.avantages {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -687,8 +688,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-
-
 .slider-visually img {
   width: 620px;
   margin: 0;
@@ -699,8 +698,14 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.popular-goods h2,
-.brands h2 {
+.popular {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: rgb(243, 247, 249);
+}
+
+.popular h2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -711,15 +716,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.popular {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  background-color: rgb(243, 247, 249);
-}
-
-.button.pop-goods,
-.button.brand {
+.popular a {
   width: 255px;
   height: 40px;
   text-align: center;
@@ -731,99 +728,93 @@ input[type="radio"].visually-hidden {
 
 .brands-list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   padding: 0;
 }
 
 .brands-item {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-
-.brands-item-columns {
   width: 218px;
   height: 145px;
   background-color: #ffffff;
 }
 
 .catalog-item,
-.brands-item-columns {
+.brands-item {
   border: 1px solid rgb(243,247,249);
 }
 
 .catalog-item:hover,
-.brands-item-columns:hover,
+.brands-item:hover,
 .catalog-item:focus,
-.brands-item-columns:focus {
+.brands-item:focus {
   box-shadow: 10px 0 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.brands-item-columns:active {
+.brands-item:active {
   box-shadow: 4px 0 10px 0 rgba(41, 52, 73, 0.5)
 }
 
-.brands-item-columns.bosch {
+.brands-item.bosch {
   margin-bottom: 20px;
 }
 
-.brands-item-columns.bosch img {
+.brands-item.bosch img {
   padding: 54px 47px;
 }
 
-.brands-item-columns.hitachi img {
-  padding: 57px 25px;
-}
-
-.brands-item-columns.makita {
+.brands-item.makita {
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
-.brands-item-columns.makita img {
+.brands-item.makita img {
   padding: 52px 48px;
 }
 
-.brands-item-columns.lg {
-  margin-left: 20px;
-}
-
-.brands-item-columns.lg img {
-  padding: 36px 49px;
-}
-
-.brands-item-columns.dewalt {
+.brands-item.dewalt {
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
-.brands-item-columns.dewalt img {
+.brands-item.dewalt img {
   padding: 50px 36px;
 }
 
-.brands-item-columns.aeg {
-  margin-left: 20px;
-}
-
-.brands-item-columns.aeg img {
-  padding: 24px 34px;
-}
-
-.brands-item-columns.intersckol {
+.brands-item.intersckol {
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
-.brands-item-columns.intersckol img {
+.brands-item.intersckol img {
   padding: 39px 0;
 }
 
-.brands-item-columns.metabo {
+.brands-item.hitachi img {
+  padding: 57px 25px;
+}
+
+.brands-item.lg {
   margin-left: 20px;
 }
 
-.brands-item-columns.metabo img {
+.brands-item.lg img {
+  padding: 36px 49px;
+}
+
+.brands-item.aeg {
+  margin-left: 20px;
+}
+
+.brands-item.aeg img {
+  padding: 24px 34px;
+}
+
+.brands-item.metabo {
+  margin-left: 20px;
+}
+
+.brands-item.metabo img {
   padding: 38px 8px;
 }
 
@@ -869,27 +860,23 @@ input[type="radio"].visually-hidden {
   background-color: rgb(243, 247, 249);
 }
 
-.index-columns-service {
+.service-items {
   display: flex;
-  flex-direction: column;
+
+  flex-wrap: wrap;
   padding-bottom: 65px
 }
 
-.service-index-column {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-}
-
-.service-wrapper {
+.service-shop {
   display: inline-block;
-  width: 425px;
+  width: 400px;
   height: 100px;
   margin-top: 65px;
+  margin-right: 450px;
   padding: 0;
 }
 
-.service-wrapper h2 {
+.service-shop h2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -913,7 +900,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.service-list {
+.service-list table {
   width: 240px;
   height: 183px;
   margin-top: 75px;
@@ -930,6 +917,12 @@ input[type="radio"].visually-hidden {
 .active td{
   background-color: #ffffff;
   color: #000000;
+}
+
+.service-delivery.active {
+  width: 250px;
+  margin-top: 40px;
+  margin-left: 80px;
 }
 
 .service-credit,
@@ -1014,9 +1007,37 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.footer-index-columns {
+.footer-navigation {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-site-navigation {
+  width: 350px;
+  padding: 0;
+  margin-top: 0;
+  margin-left: auto;
+
+}
+
+.footer-catalog-navigation {
+  width: 525px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 0;
+
+}
+
+.footer-contacts {
+  width: 330px;
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 0;
+
 }
 
 .footer-catalog-navigation a:hover,
@@ -1046,6 +1067,10 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   width: 100%;
   margin-top: 0;
+}
+
+.footer-index-columns {
+  display: flex;
 }
 
 .footer-develop a,

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum+PT+Sans:400,400i,700,700i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic" rel ="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -60,7 +61,6 @@
       <div class="container">
         <section class="avantages">
           <h2 class="visually-hidden">У нас есть всё:</h2>
-          <div class="category-index-columns">
             <div class="category materials new">
               <h3 class="title-category">Материалы</h3>
               <a  class="button materials" href="#">На любой вкус</a>
@@ -108,7 +108,6 @@
                 </li>
               </ul>
             </div>
-          </div>
         </section>
 
         <section class="popular-goods">
@@ -181,53 +180,45 @@
             <a class="button brand" href="#">Все производители</a>
           </div>
           <ul class="brands-list">
-            <li class="brands-item">
-              <div class="brands-item-columns bosch">
-                <a href="#">
-                  <img src="img/bosch.png" width="126" height="37" alt="BOSCH">
-                </a>
-              </div>
-              <div class="brands-item-columns hitachi">
+            <li class="brands-item bosch">
+              <a href="#">
+                <img src="img/bosch.png" width="126" height="37" alt="BOSCH">
+              </a>
+            </li>
+            <li class="brands-item makita">
+              <a href="#">
+                <img src="img/makita.png" width="123" height="40" alt="Makita">
+              </a>
+            </li>
+            <li class="brands-item dewalt">
+              <a href="#">
+                <img src="img/dewalt.png" width="146" height="44" alt="DeWalt">
+              </a>
+            </li>
+            <li class="brands-item intersckol">
+              <a href="#">
+                <img src="img/intersckol.png" width="218" height="66" alt="Интерскол">
+              </a>
+            </li>
+            <li class="brands-item hitachi">
                 <a href="#">
                   <img src="img/hitachi.png" width="169" height="31" alt="Hitachi">
                 </a>
-              </div>
             </li>
-            <li class="brands-item">
-              <div class="brands-item-columns makita">
-                <a href="#">
-                  <img src="img/makita.png" width="123" height="40" alt="Makita">
-                </a>
-              </div>
-              <div class="brands-item-columns lg">
-                <a href="#">
-                  <img src="img/lg.png" width="121" height="73" alt="LG">
-                </a>
-              </div>
+            <li class="brands-item lg">
+              <a href="#">
+                <img src="img/lg.png" width="121" height="73" alt="LG">
+              </a>
             </li>
-            <li class="brands-item">
-              <div class="brands-item-columns dewalt">
-                <a href="#">
-                  <img src="img/dewalt.png" width="146" height="44" alt="DeWalt">
-                </a>
-              </div>
-              <div class="brands-item-columns aeg">
-                <a href="#">
-                  <img src="img/aeg.png" width="151" height="96" alt="AEG">
-                </a>
-              </div>
+            <li class="brands-item aeg">
+              <a href="#">
+                <img src="img/aeg.png" width="151" height="96" alt="AEG">
+              </a>
             </li>
-            <li class="brands-item">
-              <div class="brands-item-columns intersckol">
-                <a href="#">
-                  <img src="img/intersckol.png" width="218" height="66" alt="Интерскол">
-                </a>
-              </div>
-              <div class="brands-item-columns metabo">
-                <a href="#">
-                  <img src="img/metabo.png" width="204" height="69" alt="Metabo">
-                </a>
-              </div>
+            <li class="brands-item metabo">
+              <a href="#">
+                <img src="img/metabo.png" width="204" height="69" alt="Metabo">
+              </a>
             </li>
           </ul>
         </section>
@@ -235,44 +226,42 @@
 
       <section class="slider-service">
         <div class="container">
-          <div class="index-columns-service">
-            <div class="service-wrapper">
+          <ul class="service-items">
+            <li class="service-shop">
               <h2 class="title-service">Сервисы</h2>
               <p>Хороший интернет-магазин отличается от плохого не только ценами!
                   Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
               </p>
-            </div>
-            <div class="service-index-column">
-              <table class="service-list">
+            </li>
+            <li class="service-list">
+              <table>
                 <tr class="active"><td>Доставка</td></tr>
                 <tr><td>Гарантия</td></tr>
                 <tr><td>Кредит</td></tr>
               </table>
-              <ul class="service-item">
-                <li class="service-delivery active">
-                  <h3 class="title-delivery">Доставка</h3>
-                  <p>Мы с удовольствием доставим ваш товар прямо
-                    к вашему подъезду совершенно бесплатно!
-                    Ведь мы неплохо заработаем,
-                    поднимая его на ваш этаж!
-                  </p>
-                <li class="service-guarantee">
-                  <h3 class="title-guarantee">Гарантия</h3>
-                  <p>Если купленный у нас товар поломается или заискрит,
-                    а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-                    Дом уж восстановите как-нибудь сами.
-                  </p>
-                </li>
-                <li class="service-credit">
-                  <h3 class="title-credit">Кредит</h3>
-                  <p>Залезть в долговую яму стало проще!
-                      Кредитные консультанты придут вам на помощь.
-                  </p>
-                  <a class="button send" href="#">Отправить заявку</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li class="service-delivery active">
+              <h3 class="title-delivery">Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!
+              </p>
+            <li class="service-guarantee">
+              <h3 class="title-guarantee">Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </li>
+            <li class="service-credit">
+              <h3 class="title-credit">Кредит</h3>
+              <p>Залезть в долговую яму стало проще!
+                  Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="button send" href="#">Отправить заявку</a>
+            </li>
+          </ul>
         </div>
       </section>
       <div class="container">
@@ -309,28 +298,24 @@
     <footer class="main-footer">
       <div class="container">
         <div class="footer-navigation">
-          <div class="footer-index-columns">
-            <a class="button-logo">Техномарт</a>
-            <ul class="footer-site-navigation">
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="footer-index-columns">
-            <p class="footer-contacts">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-              +7 (812) 555-05-55
-            </p>
-            <ul class="footer-catalog-navigation">
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Техника</a></li>
-              <li><a href="#">Инструмент</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-            </ul>
-          </div>
+          <a class="button-logo">Техномарт</a>
+          <ul class="footer-site-navigation">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <p class="footer-contacts">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55
+          </p>
+          <ul class="footer-catalog-navigation">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-item">
