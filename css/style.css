@@ -37,6 +37,20 @@ a {
   background-color: rgb(186, 39, 50);
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  opacity: 0;
+}
+
 .main-header {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
@@ -73,7 +87,7 @@ a {
 
 .button-logo {
   width: 220px;
-  height: 27px;
+  /*height: 27px;*/
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
@@ -86,7 +100,7 @@ a {
 
 .button-logo:hover,
 .button-logo:focus {
- background-color: rgb(202, 44, 55);
+  background-color: rgb(202, 44, 55);
 }
 
 .button-logo:active {
@@ -176,7 +190,6 @@ a {
   /*margin-top: 45px;*/
   margin-left: 70px;
   padding: 0;
-
 }
 
 .main-navigation .phone {
@@ -542,6 +555,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  height: 123px;
   padding: 0;
 }
 
@@ -581,7 +595,6 @@ a {
 
 .category-item-materials {
   width: 300px;
-  height: 123px;
   margin: 0;
   background-color: rgb(255, 191, 71);
 }
@@ -593,7 +606,6 @@ a {
 
 .category-item-tool {
   width: 300px;
-  height: 123px;
   margin-left: 20px;
   background-color: rgb(59, 188, 227);
 }
@@ -604,7 +616,6 @@ a {
 
 .category-item-equipment {
   width: 300px;
-  height: 123px;
   margin-left: 20px;
   background-color: rgb(220, 145, 216);
 }
@@ -647,7 +658,6 @@ a {
 .category-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin: 0;
   padding: 0;
 
@@ -692,20 +702,6 @@ a {
 
 .slider-hidden {
   display: none;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  font-size: 0;
-  white-space: nowrap;
-  opacity: 0;
 }
 
 .popular-goods h2,
