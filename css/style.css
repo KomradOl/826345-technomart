@@ -161,18 +161,13 @@ input[type="radio"].visually-hidden {
 }
 
 
-.user-navigation div {
+.user-navigation a {
   display: block;
   font-size: 17px;
   line-height: 18px;
   padding: 13px 20px;
   background-color: rgb(41, 52, 73)
   color: #ffffff;
-}
-
-.user-navigation .user-navigation-item {
-  display: flex;
-  max-width: 150px;
 }
 
 .user-navigation a:hover {
@@ -194,7 +189,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 12px;
-  left: 8px;
+  left: 18px;
 
   width: 16px;
   height: 18px;
@@ -206,7 +201,7 @@ input[type="radio"].visually-hidden {
 }
 
 .bookmark::after {
-  content: "0";
+  content: "10";
 }
 
 .basket::before {
