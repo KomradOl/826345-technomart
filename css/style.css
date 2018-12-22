@@ -89,7 +89,7 @@ input[type="radio"].visually-hidden {
 .button-logo {
   max-width: 220px;
   margin: 0;
-  padding: 10px 55px;
+  padding: 9px 55px;
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
@@ -124,8 +124,8 @@ input[type="radio"].visually-hidden {
 
 .header-search input {
   width: 270px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 50px;
   font-size: 17px;
   line-height: 18px;
@@ -165,14 +165,13 @@ input[type="search"]:focus::placeholder {
   opacity: 1;
 }
 
-input:focus + button,
 .header-search input:focus {
   background-color: rgb(255, 255, 255);
   color: #000000; 
 }
 
-input:focus + button path {
-   fill: red;
+.header-search input:focus + button path {
+  fill: rgb(238, 54, 67);
 }
 
 .user-navigation {
@@ -187,8 +186,8 @@ input:focus + button path {
   display: block;
   font-size: 17px;
   line-height: 18px;
-  padding: 13px 25px;
-  background-color: rgb(41, 52, 73)
+  padding: 12px 25px;
+  background-color: rgb(41, 52, 73);
   color: #ffffff;
 }
 
@@ -259,7 +258,7 @@ input:focus + button path {
 }
 
 .user-navigation .checkout {
-  padding: 13px 23px;
+  padding: 12px 23px;
   background-color: rgb(99, 166, 62);
 }
 
@@ -289,11 +288,10 @@ input:focus + button path {
 }
 
 .score-contacts {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  border: 1px solid black;
   width: 310px;
-  padding: 12px 0;
+  padding-top: 12px;
+  padding-left: ;
 
 }
 
@@ -308,8 +306,8 @@ input:focus + button path {
 }
 
  .phone {
-  width: 253px;
-  padding: 10px 7px; 
+  width: 255px;
+  padding: 10px 5px; 
   font-size: 21px;
   line-height: 21px;
   color: rgb(238, 54, 67);
@@ -325,8 +323,8 @@ input:focus + button path {
 .phone::before {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 215px;
+  top: 100px;
+  left: 898px;
   width: 20px;
   height: 18px;
   background-image: url("../img/icon-phone.svg");
