@@ -278,6 +278,7 @@ input[type="search"]:focus::placeholder {
   padding: 0;
   width: 940px;
   height: 120px;
+  margin-bottom: 15px;
 }
 
 .score-title {
@@ -302,6 +303,7 @@ input[type="search"]:focus::placeholder {
   line-height: 21px;
   color: rgb(238, 54, 67);
   border: 3px solid #fff;
+  margin-bottom: 5px;
 }
 
 .phone span {
@@ -313,6 +315,9 @@ input[type="search"]:focus::placeholder {
   font-size: 14px;
   line-height: 24px;
   color: rgb(50, 66, 92);
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 1px;
 }
 
 .wrapper .user {
@@ -466,7 +471,7 @@ input[type="search"]:focus::placeholder {
   display: flex;
   justify-content: space-between;
   width: 940px;
-  padding: 0 11px;
+  padding: 0 14px;
   margin-bottom: 65px;
   background-color: rgb(50, 66, 92);
   box-shadow: 0 5px 0 rgb(41, 52, 73);
@@ -474,7 +479,7 @@ input[type="search"]:focus::placeholder {
 
 .site-navigation a {
   display: block;
-  padding: 20px 30px;
+  padding: 20px 29px;
   font-size: 17px;
   line-height: 17px;
   color: #fff;
