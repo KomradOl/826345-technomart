@@ -191,7 +191,7 @@ input[type="search"]:focus::placeholder {
   padding: 12px 0;
   padding-left: 45px;
   background-color: rgb(41, 52, 73);
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .user-navigation a:hover {
@@ -199,7 +199,7 @@ input[type="search"]:focus::placeholder {
 }
 
 .user-navigation a:active {
-  opacity: 0.4;
+  color: rgb(255, 255, 255, 0.6);
 }
 
 .bookmark::before {
@@ -212,17 +212,7 @@ input[type="search"]:focus::placeholder {
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0;
-}
-
-.bookmark:hover::before,
-.basket:hover::before {
-  opacity: 1;
-}
-
-.bookmark::after {
-  content: "0";
-  padding-left: 5px;
+  opacity: 0.3;
 }
 
 .user-navigation .basket::before {
@@ -238,9 +228,22 @@ input[type="search"]:focus::placeholder {
   opacity: 0.3;
 }
 
-.basket::after {
-  content: "0";
+.basket span {
   padding-left: 10px;
+}
+
+.bookmark:hover::before,
+.basket:hover::before {
+  opacity: 1;
+}
+
+.bookmark:active::before,
+.basket:active::before {
+  opacity: 0.5;
+}
+
+.bookmark span {
+  padding-left: 5px;
 }
 
 .user-navigation .main-basket {
@@ -471,7 +474,7 @@ input[type="search"]:focus::placeholder {
   display: flex;
   justify-content: space-between;
   width: 940px;
-  padding: 0 14px;
+  padding: 0 13px;
   margin-bottom: 65px;
   background-color: rgb(50, 66, 92);
   box-shadow: 0 5px 0 rgb(41, 52, 73);
@@ -479,7 +482,7 @@ input[type="search"]:focus::placeholder {
 
 .site-navigation a {
   display: block;
-  padding: 20px 29px;
+  padding: 21px 30px;
   font-size: 17px;
   line-height: 17px;
   color: #fff;
@@ -577,6 +580,7 @@ input[type="search"]:focus::placeholder {
   position: relative;
   display: inline-block;
   width: 218px;
+  height: 315px;
   margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -1052,7 +1056,7 @@ input[type="search"]:focus::placeholder {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #ffffff;
+  color: #fff;
   width: 300px;
 }
 
@@ -1369,6 +1373,7 @@ input[type="search"]:focus::placeholder {
   display: block;
   position: relative;
   width: 940px;
+  height: 90px;
   margin-bottom: 20px;
   background-color: rgb(243, 247, 249);
 }
@@ -1399,7 +1404,7 @@ input[type="search"]:focus::placeholder {
 .button.pop-goods,
 .button.brand {
   display: block;
-  padding: 10px 0;
+  padding: 11px 0;
 }
 
 .brands-list {
@@ -1618,8 +1623,8 @@ input[type="search"]:focus::placeholder {
   display: block;
   width: 240px;
   margin-bottom: -1px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 20px;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
@@ -1837,7 +1842,7 @@ input[type="search"]:focus::placeholder {
 .button-logo.footer {
   max-width: 220px;
   margin-bottom: 20px;
-  padding: 15px 40px;
+  padding: 16px 45px;
   font-size: 30px;
   line-height: 30px;
 }
