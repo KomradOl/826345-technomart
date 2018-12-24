@@ -297,7 +297,7 @@ input[type="search"]:focus::placeholder {
 }
 
 .phone {
-  padding: 10px 0;
+  padding: 8px 0;
   font-size: 21px;
   line-height: 21px;
   color: rgb(238, 54, 67);
@@ -369,15 +369,11 @@ input[type="search"]:focus::placeholder {
   fill: #c5c5c5;
 }
 
-.wrapper .user-inner {
-  width: 300px;
-  height: 70px;
-  margin-top: 48px;
-  margin-left: 50px;
-}
-
 .profile-wrapper {
   display: flex;
+  width: 300px;
+  height: 45px;
+  margin-left: -20px;
 }
 
 .profile-wrapper a {
@@ -419,10 +415,9 @@ input[type="search"]:focus::placeholder {
   width: 240px;
   height: 24px;
   padding-top: 5px;
-  padding-left: 18px;
 }
 
-.orders a {
+.user .orders a {
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
@@ -942,7 +937,7 @@ input[type="search"]:focus::placeholder {
   opacity: 0.7;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   top: 4px;
