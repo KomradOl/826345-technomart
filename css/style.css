@@ -250,10 +250,6 @@ input[type="search"]:focus::placeholder {
   background-color: rgb(238, 54, 67);
 }
 
-.user-navigation .main-basket::after {
-  content: "10";
-}
-
 .user-navigation .checkout {
   width: 130px;
   padding-left: 20px;
@@ -373,79 +369,56 @@ input[type="search"]:focus::placeholder {
   fill: #c5c5c5;
 }
 
-.user-login {
+.wrapper .user-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 300px;
-  padding: 10px 0;
+  height: 70px;
+  margin-top: 48px;
+  margin-left: 50px;
+}
+
+.profile-wrapper a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+  background-color: #fff;
 }
 
 .profile {
-  position: relative;
-  width: 300px;
-  padding: 10px 0;
-  padding-left: 44px;
-  padding-right: 68px;
+  width: 265px;
+  padding: 11px 0;
+  padding-right: 25px;
 }
 
-.icon-profile {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 20px;
-  height: 18px;
+.profile span {
+  padding-left: 15px;
+  padding-right: 6px;
 }
 
 .output-profile {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 21px;
-  height: 17px;
+  padding: 11px 10px;
 }
 
-.icon-profile:hover path,
-.icon-profile:focus path,
-.output-profile:hover path,
-.output-profile:focus path {
+.profile-wrapper a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.profile-wrapper a:hover path,
+.profile-wrapper a:focus path {
   fill: #000;
 }
 
-.profile:hover,
-.profile:focus {
-  color: #000;
+.profile-wrapper a:active path {
+  fill: #c5c5c5;
 }
 
 .orders {
-  position: relative;
   width: 240px;
-  padding: 10px 0;
-}
-
-.main-orders {
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 77px;
-}
-
-.main-orders a {
-  position: relative;
-}
-
-.main-orders a::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 90px;
-  width: 4px;
-  height: 5px;
-  background: url("../img/point.png") no-repeat 0 0;
-}
-
-.user-cab {
-  position: absolute;
-  top: 0;
-  left: 123px;
-  width: 105px;
+  height: 24px;
+  padding-top: 5px;
+  padding-left: 18px;
 }
 
 .orders a {
@@ -456,14 +429,31 @@ input[type="search"]:focus::placeholder {
   background-color: rgb(243, 247, 249);
 }
 
+.main-orders {
+  position: relative;
+}
+
+.main-orders::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 86px;
+  width: 4px;
+  height: 5px;
+  background: url("../img/point.png") no-repeat 0 0;
+}
+
+.user-cab {
+  padding-left: 25px;
+}
+
 .orders a:hover,
 .orders a:focus {
   color: rgb(238, 54, 67);
 }
 
 .orders a:active {
-  color: rgb(50, 66, 92);
-  opacity: 0.7;
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .site-navigation {
@@ -1642,9 +1632,8 @@ input[type="search"]:focus::placeholder {
 }
 
 .service-list .lower {
-  box-shadow:
-  inset 0 1px 0 0 #293449,
-  0 1px 0 0 #405069;
+  box-shadow: inset 0 1px 0 #293449,
+              0 1px 0 #405069;
 }
 
 .service-text.delivery,
@@ -1834,9 +1823,9 @@ input[type="search"]:focus::placeholder {
 }
 
 .button-logo.footer {
-  max-width: 220px;
-  margin-bottom: 20px;
-  padding: 16px 45px;
+  width: 130px;
+  margin-bottom: 10px;
+  padding: 20px 45px;
   font-size: 30px;
   line-height: 30px;
 }
@@ -2194,6 +2183,6 @@ input[type="search"]:focus::placeholder {
   width: 220px;
   padding: 10px 0;
   text-align: center;
-  color:#000;
+  color: #000;
   background-color: #fff;
 }
