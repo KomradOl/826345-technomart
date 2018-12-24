@@ -353,11 +353,6 @@ input[type="search"]:focus::placeholder {
   padding: 15px 14px;
 }
 
-.entrance span:hover path,
-.entrance span:focus path {
-  fill: #000;
-}
-
 .check-in {
   width: 110px;
 }
@@ -373,8 +368,17 @@ input[type="search"]:focus::placeholder {
   color: rgb(238, 54, 67);
 }
 
+.entrance:hover path,
+.entrance:focus path {
+  fill: #000;
+}
+
 .user a:active {
   color: rgba(0, 0, 0, 0.7);
+}
+
+.entrance:active path {
+  fill: #c5c5c5;
 }
 
 .user-login {
