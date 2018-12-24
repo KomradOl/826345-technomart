@@ -358,7 +358,7 @@ input[type="search"]:focus::placeholder {
 
 .entrance:hover path,
 .entrance:focus path {
-  fill: #000;
+  fill: #32425c;
 }
 
 .user a:active {
