@@ -1785,6 +1785,9 @@ input[type="search"]:focus::placeholder {
 }
 
 .info-tools h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 30px;
   line-height: 30px;
   color: #000;
