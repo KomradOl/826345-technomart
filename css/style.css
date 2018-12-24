@@ -1927,7 +1927,7 @@ input[type="search"]:focus::placeholder {
   justify-content: center;
   width: 43px;
   height: 43px;
-  background-color: #000;
+  background-color: #212a3a;
   border-radius: 50%;
 }
 
